@@ -4,6 +4,7 @@ struct UpdateCustomerTaskModel {
     let firstName: String?
     let middleName: String?
     let lastName: String?
+    let phoneNumber: String?
     let dateOfBirth: String?
     let gender: String?
     let prayercellId: Int?
@@ -15,6 +16,7 @@ extension PutCustomerRequest.Payload {
         self.first_name = taskModel.firstName
         self.middle_name = taskModel.middleName
         self.last_name = taskModel.lastName
+        self.phone_number = taskModel.phoneNumber
         self.date_of_birth = taskModel.dateOfBirth
         self.gender = taskModel.gender
         self.prayercell_id = taskModel.prayercellId

@@ -2,17 +2,18 @@ import Foundation
 
 extension Customer {
     init(response: PutCustomerResponse) {
+        let member = response.member
         self.init(
-            userId: response.id,
-            firstName: response.first_name ?? "",
-            middleName: response.middle_name ?? "",
-            lastName: response.last_name ?? "",
-            email: response.email ?? "",
-            birthDate: response.date_of_birth ?? "",
-            phoneNumber: response.phone_number ?? "",
-            gender: response.gender ?? "",
-            prayercellId: response.prayercell?.id,
-            populationGroupId: response.population_group?.id
+            userId: member.id,
+            firstName: member.first_name ?? "",
+            middleName: member.middle_name ?? "",
+            lastName: member.last_name ?? "",
+            email: member.email ?? "",
+            birthDate: member.date_of_birth ?? "",
+            phoneNumber: member.phone_number ?? "",
+            gender: member.gender ?? "",
+            prayercellId: member.prayercell?.id,
+            populationGroupId: member.population_group?.id
         )
     }
 }

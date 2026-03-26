@@ -59,9 +59,11 @@ class ProfilePageViewModel: ObservableObject {
         self.selectedPopulationGroupId = customer?.populationGroupId
 
         if let dateString = customer?.birthDate, !dateString.isEmpty {
-            let formatter = DateFormatter()
-            formatter.dateFormat = "yyyy-MM-dd"
-            if let date = formatter.date(from: dateString) {
+            let isoFormatter = DateFormatter()
+            isoFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ"
+            let simpleFormatter = DateFormatter()
+            simpleFormatter.dateFormat = "yyyy-MM-dd"
+            if let date = isoFormatter.date(from: dateString) ?? simpleFormatter.date(from: dateString) {
                 self.birthDate = date
                 self.hasBirthDate = true
             }
@@ -122,6 +124,7 @@ class ProfilePageViewModel: ObservableObject {
             firstName: firstName,
             middleName: middleName,
             lastName: lastName,
+            phoneNumber: phoneNumber,
             dateOfBirth: formattedBirthDate,
             gender: gender,
             prayercellId: selectedPrayerCellId,
