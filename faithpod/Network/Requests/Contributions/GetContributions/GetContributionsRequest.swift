@@ -2,7 +2,7 @@ struct GetContributionsRequest: HTTPRequest {
     typealias Payload = GetContributionsPayload
     typealias Response = GetContributionsResponse
     
-    let path: HTTPEndpoint = KSDAEndpoint.get_user_contributions
+    let path: HTTPEndpoint = FaithpodEndpoint.get_user_contributions
     let method = HTTPMethod.GET
     var body: Payload?
     

@@ -8,7 +8,7 @@ struct PostSignInRequest: HTTPRequest, HTTPAuthenticationRequest {
         body = payload
     }
 
-    let path: HTTPEndpoint = KSDAEndpoint.customers_signin
+    let path: HTTPEndpoint = FaithpodEndpoint.customers_signin
     let method = HTTPMethod.POST
     var body: Payload?
 }

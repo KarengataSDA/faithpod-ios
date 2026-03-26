@@ -9,7 +9,7 @@ struct ContributionsRequest: HTTPRequest {
         body = payload
     }
     
-    let path: HTTPEndpoint = KSDAEndpoint.make_contributions
+    let path: HTTPEndpoint = FaithpodEndpoint.make_contributions
     let method = HTTPMethod.POST
     var body: Payload?
 }

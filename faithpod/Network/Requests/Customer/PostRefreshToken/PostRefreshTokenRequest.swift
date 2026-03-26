@@ -12,7 +12,7 @@ struct PostRefreshTokenRequest: HTTPRequest {
         body = PostRefreshTokenPayload(refresh_token: refreshToken)
     }
 
-    let path: HTTPEndpoint = KSDAEndpoint.token_refresh
+    let path: HTTPEndpoint = FaithpodEndpoint.token_refresh
     let method = HTTPMethod.POST
     var body: Payload?
 }

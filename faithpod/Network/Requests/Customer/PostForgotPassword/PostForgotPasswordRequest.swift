@@ -8,7 +8,7 @@ struct PostForgotPasswordRequest: HTTPRequest, HTTPAuthenticationRequest {
         body = payload
     }
 
-    let path: HTTPEndpoint = KSDAEndpoint.password_email
+    let path: HTTPEndpoint = FaithpodEndpoint.password_email
     let method = HTTPMethod.POST
     var body: Payload?
 }

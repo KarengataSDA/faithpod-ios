@@ -11,7 +11,7 @@ extension HTTPEndpoint {
     }
 }
 
-enum KSDAEndpoint: HTTPEndpoint {
+enum FaithpodEndpoint: HTTPEndpoint {
     case customers_signin
     case customers_me
     case customers_update

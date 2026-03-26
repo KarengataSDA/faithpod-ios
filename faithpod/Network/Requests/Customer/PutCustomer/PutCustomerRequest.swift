@@ -5,7 +5,7 @@ struct PutCustomerRequest: HTTPRequest {
     typealias Response = PutCustomerResponse
     
     var path: HTTPEndpoint {
-        return KSDAEndpoint.customers_update
+        return FaithpodEndpoint.customers_update
     }
     
     init(payload: Payload) {
