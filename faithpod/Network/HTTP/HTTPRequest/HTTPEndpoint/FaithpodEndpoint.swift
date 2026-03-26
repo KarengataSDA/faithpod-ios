@@ -63,7 +63,6 @@ enum FaithpodEndpoint: HTTPEndpoint {
             return "/password/email"
 
         case .groups:
-            return "/groups"
             return "/population-groups"
 
         case .prayercells:

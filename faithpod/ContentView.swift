@@ -90,20 +90,20 @@ private class SessionValidator: ObservableObject {
             .sink(
                 receiveCompletion: { completion in
                     if case .failure(let error) = completion {
-                        print("🔴 Session validation failed: \(error)")
+                        print(" Session validation failed: \(error)")
                         // Only clear session for definitive auth failures (unauthorized)
                         // Do NOT clear for transient errors (network, timeout, server errors)
                         // The HTTPClient already attempts token refresh on 401 before this point
                         if Self.isSessionInvalidError(error) {
-                            print("🔴 Clearing session due to auth failure")
+                            print(" Clearing session due to auth failure")
                             sessionStore.clear()
                         } else {
-                            print("🟡 Transient error during validation - keeping session")
+                            print("Transient error during validation - keeping session")
                         }
                     }
                 },
                 receiveValue: { _ in
-                    print("✅ Session validated successfully")
+                    print(" Session validated successfully")
                 }
             )
     }
@@ -113,10 +113,10 @@ private class SessionValidator: ObservableObject {
             .receive(on: DispatchQueue.main)
             .sink { [weak self] success in
                 if success {
-                    print("✅ Proactive token refresh succeeded, validating session")
+                    print("Proactive token refresh succeeded, validating session")
                     self?.validate(task: task, sessionStore: sessionStore)
                 } else {
-                    print("🔴 Proactive token refresh failed")
+                    print(" Proactive token refresh failed")
                 }
             }
     }

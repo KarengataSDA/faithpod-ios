@@ -67,7 +67,7 @@ class HTTPClient: NetworkClient {
                     throw error
                 }
 
-                print("🔄 HTTPClient: 401 received, attempting token refresh before retry")
+                print(" HTTPClient: 401 received, attempting token refresh before retry")
                 guard let sessionManager = self.sessionManager else {
                     throw HTTPClientError.unauthorized
                 }
@@ -76,11 +76,11 @@ class HTTPClient: NetworkClient {
                     .setFailureType(to: Error.self)
                     .flatMap { success -> AnyPublisher<Data, Error> in
                         guard success else {
-                            print("🔴 HTTPClient: refresh failed")
+                            print(" HTTPClient: refresh failed")
                             return Fail(error: HTTPClientError.unauthorized).eraseToAnyPublisher()
                         }
 
-                        print("✅ HTTPClient: refresh succeeded, retrying original request")
+                        print(" HTTPClient: refresh succeeded, retrying original request")
                         // Rebuild the request with fresh headers
                         var retryRequest = urlRequest
                         retryRequest.allHTTPHeaderFields = self.getRequestHeaders(for: request)
