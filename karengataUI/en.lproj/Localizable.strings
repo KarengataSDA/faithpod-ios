@@ -1,0 +1,6 @@
+// MARK: - Home Page
+"HomePage.Label.DefaultHomePageTitle" = "Welcome to";
+"HomePage.Label.Exaclamation" = "!";
+"HomePage.Label.WelcomeMessage" = "Hi %@!";
+"HomePage.Label.WelcomeMessageGuest" = "There";
+

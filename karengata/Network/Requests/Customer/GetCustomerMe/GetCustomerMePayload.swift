@@ -1,0 +1,3 @@
+struct GetCustomerMePayload: Encodable {
+    
+}
