@@ -1,7 +1,7 @@
 extension ContributionHistory {
     init(response: ContributionHistoryResponse) {
         self.id = response.id
-        self.userId = response.user_id
+        self.userId = response.member_id
         self.contributiontypeId = response.contributiontype_id
         self.contributionAmount = response.contribution_amount
         self.contributionDate = response.contribution_date
