@@ -126,7 +126,7 @@ class ProfilePageViewModel: ObservableObject {
             lastName: lastName,
             phoneNumber: phoneNumber,
             dateOfBirth: formattedBirthDate,
-            gender: gender,
+            gender: gender.lowercased(),
             prayercellId: selectedPrayerCellId,
             populationGroupId: selectedPopulationGroupId
         )
