@@ -4,7 +4,7 @@ import Security
 struct KeychainStore: KeyStore {
     private let service: String
 
-    init(service: String = Bundle.main.bundleIdentifier ?? "com.karengata.app") {
+    init(service: String = Bundle.main.bundleIdentifier ?? "com.faithpod.app") {
         self.service = service
     }
 

@@ -1,6 +1,6 @@
 //
-//  karengataApp.swift
-//  karengata
+//  faithpodApp.swift
+//  faithpod
 //
 //  Created by Ambrose Mbayi on 04/05/2025.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct karengataApp: App {
+struct faithpodApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

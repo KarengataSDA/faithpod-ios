@@ -1,9 +1,15 @@
 //
-//  Client.xcconfig
-//  karengata
+//  GlobalEnvironment.xcconfig
+//  faithpod
 //
 //  Created by Ambrose Mbayi on 05/05/2025.
 //
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
+
+HOST_URL = api.karengatasda.org
+
+//to test for localhost
+//HOST_URL = 127.0.0.1:8000
+//edit URLScheme to http://

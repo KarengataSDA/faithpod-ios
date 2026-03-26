@@ -22,26 +22,26 @@
 		CD31C61F2DCA4C180043E58D /* ConsolidatedAlertSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsolidatedAlertSheet.swift; sourceTree = "<group>"; };
 		CD31C6252DCB217B0043E58D /* ConsolidatedAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsolidatedAlertView.swift; sourceTree = "<group>"; };
 		CD3BC2182DE10D8F00A3B4DD /* TextFieldWithDoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithDoneButton.swift; sourceTree = "<group>"; };
-		CD78A7382DC71C5800C0FD98 /* karengata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = karengata.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD78A7382DC71C5800C0FD98 /* faithpod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = faithpod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		CD78A7602DC7445600C0FD98 /* Exceptions for "karengata" folder in "karengata" target */ = {
+		CD78A7602DC7445600C0FD98 /* Exceptions for "faithpod" folder in "faithpod" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = CD78A7372DC71C5800C0FD98 /* karengata */;
+			target = CD78A7372DC71C5800C0FD98 /* faithpod */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		CD78A73A2DC71C5800C0FD98 /* karengata */ = {
+		CD78A73A2DC71C5800C0FD98 /* faithpod */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				CD78A7602DC7445600C0FD98 /* Exceptions for "karengata" folder in "karengata" target */,
+				CD78A7602DC7445600C0FD98 /* Exceptions for "faithpod" folder in "faithpod" target */,
 			);
-			path = karengata;
+			path = faithpod;
 			sourceTree = "<group>";
 		};
 		CD78A80E2DC75DAB00C0FD98 /* Elements */ = {
@@ -89,8 +89,8 @@
 		CD78A72F2DC71C5800C0FD98 = {
 			isa = PBXGroup;
 			children = (
-				CD78A74A2DC71C8F00C0FD98 /* karengataUI */,
-				CD78A73A2DC71C5800C0FD98 /* karengata */,
+				CD78A74A2DC71C8F00C0FD98 /* faithpodUI */,
+				CD78A73A2DC71C5800C0FD98 /* faithpod */,
 				CD78A7392DC71C5800C0FD98 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,12 +98,12 @@
 		CD78A7392DC71C5800C0FD98 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD78A7382DC71C5800C0FD98 /* karengata.app */,
+				CD78A7382DC71C5800C0FD98 /* faithpod.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CD78A74A2DC71C8F00C0FD98 /* karengataUI */ = {
+		CD78A74A2DC71C8F00C0FD98 /* faithpodUI */ = {
 			isa = PBXGroup;
 			children = (
 				CD31C6042DCA1FA20043E58D /* Molecules */,
@@ -112,15 +112,15 @@
 				CD78A80E2DC75DAB00C0FD98 /* Elements */,
 				CD31C5FE2DC9B8A10043E58D /* Localizable.strings */,
 			);
-			path = karengataUI;
+			path = faithpodUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CD78A7372DC71C5800C0FD98 /* karengata */ = {
+		CD78A7372DC71C5800C0FD98 /* faithpod */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD78A7462DC71C5A00C0FD98 /* Build configuration list for PBXNativeTarget "karengata" */;
+			buildConfigurationList = CD78A7462DC71C5A00C0FD98 /* Build configuration list for PBXNativeTarget "faithpod" */;
 			buildPhases = (
 				CD78A7342DC71C5800C0FD98 /* Sources */,
 				CD78A7352DC71C5800C0FD98 /* Frameworks */,
@@ -131,15 +131,15 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				CD78A73A2DC71C5800C0FD98 /* karengata */,
+				CD78A73A2DC71C5800C0FD98 /* faithpod */,
 				CD78A80E2DC75DAB00C0FD98 /* Elements */,
 				CD78A8122DC75DB300C0FD98 /* Views */,
 			);
-			name = karengata;
+			name = faithpod;
 			packageProductDependencies = (
 			);
-			productName = karengata;
-			productReference = CD78A7382DC71C5800C0FD98 /* karengata.app */;
+			productName = faithpod;
+			productReference = CD78A7382DC71C5800C0FD98 /* faithpod.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -157,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CD78A7332DC71C5800C0FD98 /* Build configuration list for PBXProject "karengata" */;
+			buildConfigurationList = CD78A7332DC71C5800C0FD98 /* Build configuration list for PBXProject "faithpod" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -171,7 +171,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD78A7372DC71C5800C0FD98 /* karengata */,
+				CD78A7372DC71C5800C0FD98 /* faithpod */,
 			);
 		};
 /* End PBXProject section */
@@ -216,7 +216,7 @@
 /* Begin XCBuildConfiguration section */
 		CD78A8FA2DC8A76E00C0FD98 /* Release - Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReferenceAnchor = CD78A73A2DC71C5800C0FD98 /* karengata */;
+			baseConfigurationReferenceAnchor = CD78A73A2DC71C5800C0FD98 /* faithpod */;
 			baseConfigurationReferenceRelativePath = Config/ProductionEnvironment.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,18 +274,18 @@
 		};
 		CD78A8FB2DC8A76E00C0FD98 /* Release - Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReferenceAnchor = CD78A73A2DC71C5800C0FD98 /* karengata */;
+			baseConfigurationReferenceAnchor = CD78A73A2DC71C5800C0FD98 /* faithpod */;
 			baseConfigurationReferenceRelativePath = Config/ProductionEnvironment.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 156;
-				DEVELOPMENT_ASSET_PATHS = "\"karengata/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"faithpod/Preview Content\"";
 				DEVELOPMENT_TEAM = 342KR2X85A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = karengata/Info.plist;
+				INFOPLIST_FILE = faithpod/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -296,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0.6;
-				PRODUCT_BUNDLE_IDENTIFIER = mbayi.karengata;
+				PRODUCT_BUNDLE_IDENTIFIER = mbayi.faithpod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -310,7 +310,7 @@
 		};
 		CD78A8FC2DC8A78B00C0FD98 /* Debug -  Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReferenceAnchor = CD78A73A2DC71C5800C0FD98 /* karengata */;
+			baseConfigurationReferenceAnchor = CD78A73A2DC71C5800C0FD98 /* faithpod */;
 			baseConfigurationReferenceRelativePath = Config/ProductionEnvironment.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -375,18 +375,18 @@
 		};
 		CD78A8FD2DC8A78B00C0FD98 /* Debug -  Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReferenceAnchor = CD78A73A2DC71C5800C0FD98 /* karengata */;
+			baseConfigurationReferenceAnchor = CD78A73A2DC71C5800C0FD98 /* faithpod */;
 			baseConfigurationReferenceRelativePath = Config/ProductionEnvironment.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 156;
-				DEVELOPMENT_ASSET_PATHS = "\"karengata/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"faithpod/Preview Content\"";
 				DEVELOPMENT_TEAM = 342KR2X85A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = karengata/Info.plist;
+				INFOPLIST_FILE = faithpod/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -397,7 +397,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0.6;
-				PRODUCT_BUNDLE_IDENTIFIER = mbayi.karengata;
+				PRODUCT_BUNDLE_IDENTIFIER = mbayi.faithpod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -412,7 +412,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CD78A7332DC71C5800C0FD98 /* Build configuration list for PBXProject "karengata" */ = {
+		CD78A7332DC71C5800C0FD98 /* Build configuration list for PBXProject "faithpod" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD78A8FC2DC8A78B00C0FD98 /* Debug -  Production */,
@@ -421,7 +421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Debug -  Production";
 		};
-		CD78A7462DC71C5A00C0FD98 /* Build configuration list for PBXNativeTarget "karengata" */ = {
+		CD78A7462DC71C5A00C0FD98 /* Build configuration list for PBXNativeTarget "faithpod" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD78A8FD2DC8A78B00C0FD98 /* Debug -  Production */,

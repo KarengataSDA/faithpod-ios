@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CD78A7372DC71C5800C0FD98"
-               BuildableName = "karengata.app"
-               BlueprintName = "karengata"
-               ReferencedContainer = "container:karengata.xcodeproj">
+               BuildableName = "faithpod.app"
+               BlueprintName = "faithpod"
+               ReferencedContainer = "container:faithpod.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,14 +45,14 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CD78A7372DC71C5800C0FD98"
-            BuildableName = "karengata.app"
-            BlueprintName = "karengata"
-            ReferencedContainer = "container:karengata.xcodeproj">
+            BuildableName = "faithpod.app"
+            BlueprintName = "faithpod"
+            ReferencedContainer = "container:faithpod.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Debug -  Production"
+      buildConfiguration = "Release - Production"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CD78A7372DC71C5800C0FD98"
-            BuildableName = "karengata.app"
-            BlueprintName = "karengata"
-            ReferencedContainer = "container:karengata.xcodeproj">
+            BuildableName = "faithpod.app"
+            BlueprintName = "faithpod"
+            ReferencedContainer = "container:faithpod.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -72,7 +72,7 @@
       buildConfiguration = "Debug -  Production">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Debug -  Production"
+      buildConfiguration = "Release - Production"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

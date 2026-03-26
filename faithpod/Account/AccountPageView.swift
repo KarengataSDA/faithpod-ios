@@ -69,17 +69,17 @@ struct AccountPageView: View {
 
             socialButton(
                 imageName: "facebook",
-                urlString: "https://www.facebook.com/karengatachurch/"
+                urlString: "https://www.facebook.com/faithpodchurch/"
             )
 
             socialButton(
                 imageName: "youtube",
-                urlString: "https://www.youtube.com/@KarengataSDA"
+                urlString: "https://www.youtube.com/@FaithpodSDA"
             )
 
             socialButton(
                 imageName: "instagram",
-                urlString: "https://www.instagram.com/karengatasda/"
+                urlString: "https://www.instagram.com/faithpodsda/"
             )
             
             socialButton(
