@@ -8,6 +8,7 @@ struct GetContributionsResponse: Decodable {
 struct ContributionHistoryResponse: Decodable {
     let id: Int
     let user_id: Int
+    let member_id: Int
     let contributiontype_id: Int
     let contribution_amount: Double
     let contribution_date: String
