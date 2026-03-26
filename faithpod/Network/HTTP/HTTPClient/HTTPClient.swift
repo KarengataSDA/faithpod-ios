@@ -5,6 +5,11 @@ protocol NetworkClient {
     func perform<Request: HTTPRequest>(_ request: Request) -> AnyPublisher<Request.Response, Error>
 }
 
+private class NoRedirectSessionDelegate: NSObject, URLSessionTaskDelegate {
+    func urlSession(_ session: URLSession, task: URLSessionTask, willPerformHTTPRedirection response: HTTPURLResponse, newRequest request: URLRequest, completionHandler: @escaping (URLRequest?) -> Void) {
+        completionHandler(nil)
+    }
+}
 
 class HTTPClient: NetworkClient {
     private static let badRequestStatusCode = 400
@@ -17,7 +22,7 @@ class HTTPClient: NetworkClient {
     private let encoder = HTTPClientEncoder()
     private let decoder = HTTPClientDecoder()
 
-    init(context: HTTPMessageContextual, session: URLSession = URLSession(configuration: .default), sessionManager: SessionManaging? = nil) {
+    init(context: HTTPMessageContextual, session: URLSession = URLSession(configuration: .default, delegate: NoRedirectSessionDelegate(), delegateQueue: nil), sessionManager: SessionManaging? = nil) {
         self.context = context
         self.session = session
         self.sessionManager = sessionManager

@@ -26,8 +26,6 @@ struct CustomerRepository: Repository {
             .receive(on: DispatchQueue.main)
             .tryMap { response in
                 self.setCustomerAuthorization(token: response.token)
-                self.sessionStore.storeRefreshToken(token: response.refresh_token)
-                self.sessionStore.storeTokenExpiry(expiresAt: response.expires_at)
                 return response
             }.eraseToAnyPublisher()
     }
@@ -43,8 +41,6 @@ struct CustomerRepository: Repository {
             .receive(on: DispatchQueue.main)
             .tryMap { response in
                 self.setCustomerAuthorization(token: response.token)
-                self.sessionStore.storeRefreshToken(token: response.refresh_token)
-                self.sessionStore.storeTokenExpiry(expiresAt: response.expires_at)
                 return response
             }.eraseToAnyPublisher()
     }

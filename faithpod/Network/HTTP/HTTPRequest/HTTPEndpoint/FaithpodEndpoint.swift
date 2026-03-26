@@ -36,13 +36,13 @@ enum FaithpodEndpoint: HTTPEndpoint {
     var location: String {
         switch self {
         case .customers_signin:
-            return "/login"
+            return "/members/login"
 
         case .customers_me:
-            return "/user"
+            return "/members/me"
 
         case .customers_update:
-            return "/users/info"
+            return "/members/update-info"
 
         case .contributions_type:
             return "/contribution-types"
