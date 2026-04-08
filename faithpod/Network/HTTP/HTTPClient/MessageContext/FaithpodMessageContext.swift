@@ -2,9 +2,9 @@ import Foundation
 import Combine
 import UIKit
 
-class KSDAMessageContext: HTTPMessageContextual {
+class FaithpodMessageContext: HTTPMessageContextual {
     var scheme: URLScheme = .https
-    var host = "\(Config.shared.hostUrl)"
+    var host = "\(Config.shared.tenant).\(Config.shared.hostUrl)"
     
     private var authToken: String?
     private var sessionToken: String?

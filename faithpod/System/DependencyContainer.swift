@@ -12,7 +12,7 @@ struct DependencyContainer: EnvironmentKey {
         let keychainStore = KeychainStore()
         let sessionStore = SessionStore(keyStore: keyStore, keychainStore: keychainStore)
         let sessionManager = SessionManager(sessionStore: sessionStore)
-        let context = KSDAMessageContext(sessionStore: sessionStore)
+        let context = FaithpodMessageContext(sessionStore: sessionStore)
         let client = HTTPClient(context: context, sessionManager: sessionManager)
 
         let alertStore = AlertStore()

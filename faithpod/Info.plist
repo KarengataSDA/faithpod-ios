@@ -9,5 +9,13 @@
 		<key>UIColorName</key>
 		<string>Brand</string>
 	</dict>
+	<key>Tenant</key>
+	<string>$(TENANT)</string>
+	<key>CFBundleDisplayName</key>
+	<string>$(BUNDLE_DISPLAY_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(BUNDLE_IDENTIFIER)</string>
+	<key>Environment </key>
+	<string>$(ENVIRONMENT)</string>
 </dict>
 </plist>

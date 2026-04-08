@@ -3,10 +3,17 @@ import Foundation
 class Config {
     enum Property: String {
         case hostUrl = "Host URL"
+        case tenant = "Tenant"
+        case bundleId = "CFBundleIdentifier"
+        case bundleDisplayName = "CFBUndleDisplayName"
+        case version = "CFBundleShortVersionString"
+        case environment = "Environment"
     }
     
     enum Environment: String {
         case production
+        case stage
+        case development
     }
     
     static let shared = Config()
@@ -15,8 +22,20 @@ class Config {
         return Bundle(for: type(of: self))
     }
     
+    var version: String {
+        return propertyString(forKey: .version)
+    }
+    
+    var environment: Environment {
+        return Environment(rawValue: propertyString(forKey: .environment)) ?? .development
+    }
+    
     var hostUrl: String {
         return propertyString(forKey: .hostUrl)
+    }
+    
+    var tenant: String {
+        return propertyString(forKey: .tenant)
     }
     
     private func safePropertyString(for givenBundle: Bundle? = nil, forKey key: Property) -> String? {

@@ -140,7 +140,7 @@ class SessionStore {
     }
 
     func clear() {
-        print("🔴 SessionStore: clear() called")
+       
         clearStoredSession()
 
         currentCustomer.send(nil)
@@ -150,6 +150,6 @@ class SessionStore {
         currentDeviceToken.send(nil)
         currentRefreshToken.send(nil)
         tokenExpiresAt.send(nil)
-        print("🔴 SessionStore: all data cleared, nil sent to all subjects")
+       
     }
 }

@@ -57,24 +57,37 @@ struct TransactionHistory: View {
             }
             
             // Contribution List
-            List {
-                ForEach(filteredContributions) { item in
-                    HStack(alignment: .top) {
-                        VStack(alignment: .leading, spacing: 6) {
-                            Text("Ksh \(item.contributionAmount, specifier: "%.2f")")
-                                .font(.headline)
-                            
-                            Text(item.contributionType.name ?? "Unknown Type")
+            if filteredContributions.isEmpty {
+                Spacer()
+                VStack(spacing: 12) {
+                    Image(systemName: "tray")
+                        .font(.system(size: 48))
+                        .foregroundColor(.gray)
+                    Text("No transaction made yet!")
+                        .foregroundColor(.gray)
+                        .font(.subheadline)
+                }
+                Spacer()
+            } else {
+                List {
+                    ForEach(filteredContributions) { item in
+                        HStack(alignment: .top) {
+                            VStack(alignment: .leading, spacing: 6) {
+                                Text("Ksh \(item.contributionAmount, specifier: "%.2f")")
+                                    .font(.headline)
+
+                                Text(item.contributionType.name ?? "Unknown Type")
+                                    .font(.subheadline)
+                                    .foregroundColor(.gray)
+                            }
+                            Spacer()
+
+                            Text(item.contributionDate.toFormattedDisplay())
                                 .font(.subheadline)
                                 .foregroundColor(.gray)
                         }
-                        Spacer()
-                        
-                        Text(item.contributionDate.toFormattedDisplay())
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
+                        .padding(.vertical, 6)
                     }
-                    .padding(.vertical, 6)
                 }
             }
             // Total Summary
